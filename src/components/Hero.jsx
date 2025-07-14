@@ -1,12 +1,13 @@
 import React from "react";
 import { assets, cities } from "../assets/assets";
+import heroImage from "../assets/heroImage.png"
 
 export default function Hero() {
   return (
     <div
-      className=' flex flex-col items-start justify-center px-6 md:px-16 lg:px-24 xl:px-32 text-white bg-[url("/src/assets/heroImage.png")]
-     bg-no-repeat bg-cover bg-center h-screen'
-    >
+  className="h-screen bg-no-repeat bg-cover bg-center text-white flex flex-col items-start justify-center px-6 md:px-16 lg:px-24 xl:px-32"
+  style={{ backgroundImage:` url(${heroImage}) `}}
+>
       <p className="bg-[#49B9ff]/50 px-3.5 py-1 rounded-full mt-20">
         The Ultimate Hotel Experience
       </p>
@@ -36,8 +37,8 @@ export default function Hero() {
           />
 
           <datalist id="destinations">
-            {cities.map((city ,index)=>(
-              <option value= {city} key={index}/>
+            {cities.map((city, index) => (
+              <option value={city} key={index} />
             ))}
           </datalist>
         </div>
@@ -79,7 +80,7 @@ export default function Hero() {
         </div>
 
         <button className="flex items-center justify-center gap-1 rounded-md bg-black py-3 px-4 text-white my-auto cursor-pointer max-md:w-full max-md:py-1">
-         <img src={assets.searchIcon} alt="searchIcon" className="h-7" />
+          <img src={assets.searchIcon} alt="searchIcon" className="h-7" />
           <span>Search</span>
         </button>
       </form>
