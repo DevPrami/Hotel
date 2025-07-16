@@ -12,7 +12,7 @@ export default function HotelCard({ room, index }) {
       <img
         src={room.images[0]}
         alt=""
-        className="relative max-w-[46%] w-full rounded-xl overflow-hidden bg-white text-gray-500/90 shadow-[0px_4px_4px_rgba(0, 0 , 0 , 0.05)]"
+        className="relative max-w-70 w-full rounded-xl overflow-hidden bg-white text-gray-500/90 shadow-[0px_4px_4px_rgba(0, 0 , 0 , 0.05)]"
       />
 
       {index % 2 === 0 && (
